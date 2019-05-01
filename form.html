@@ -1,0 +1,79 @@
+<html>
+<head>
+<style type="text/css">
+button{
+	border: 1px dashed black;
+	font-size: 15px;
+
+} 
+body{
+	background-color: lightblue;
+}
+div{
+	border: 3px dashed red;
+	height: 400px;
+	width: 300px;
+	padding: 20px ;
+	text-align: center;
+	margin: 50px auto;
+}
+</style>
+<script type="text/javascript" src="form.js"></script>
+
+</head>
+
+<body>
+
+<center> <h1><i><b><u>REGISTRATION FORM </u></b></i> </h1></center><br>
+<div>
+<table>
+	<tr>
+		<td>Name:</td>
+		<td> <input type="text" placeholder="Name" name=""> </td>
+	</tr>
+	<tr>
+		<td>DOB:</td>
+		<td> <input type="text" placeholder="DD/MM/YYYY" > </td>
+	</tr>
+	<tr>
+		<td>Gender:</td>
+		<td> <input type="radio" name="Gender" >male </td>
+		<td> <input type="radio" name="Gender" >female </td>
+	</tr>
+	<tr>
+		<td>Mobile no:</td>
+		<td> <select>
+			<option>91</option>
+			<option>92</option>
+			<option>93</option>
+			<option>94</option>
+		</select>
+		<input type="Phone" placeholder="Mobile no:" name="">
+		</td>
+	<tr>
+		<td>E-mail:</td>
+		<td> <input type="text" placeholder="E-mail" > </td>
+	</tr>
+	<tr>
+		<td>Education:</td>
+		<td> <input type="text" placeholder="Education" > </td>
+	</tr>
+	<tr>
+		<td>Percentage:</td>
+		<td> <input type="text" placeholder="Percentage" > </td>
+	</tr>
+
+
+</table>
+<br>
+<button onclick="myfunction()">submit</button>
+<script type="text/javascript"> function myfunction(){
+	alert("YOUR INFORMATION SAVED SUCCESSFULLY...");  }</script>
+
+</div>
+<script type="text/javascript">
+  document.getElementById("field_terms").setCustomValidity("Please indicate that you accept the Terms and Conditions");
+</script>
+
+</body>
+</html>
